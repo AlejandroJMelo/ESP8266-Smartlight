@@ -3,6 +3,17 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+body {
+  padding: 5px;
+  background-color: white;
+  color:#202020;
+  font-size: medium;
+}
+
+.dark-mode {
+  background-color: #202020;
+  color: white;
+}
 .switch {
   position: relative;
   display: inline-block;
@@ -79,5 +90,14 @@ input:checked + .slider:before {
         <td>On</td>
     </tr>
 </table>
+<br>
+<button onclick="myFunction()">Dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 </html> 
