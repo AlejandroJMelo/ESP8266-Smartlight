@@ -76,7 +76,7 @@ input:checked + .slider:before {
 </style>
 </head>
 <body>
- <h2>Smart light</h2>
+ <h2>Smart light <span onclick="myFunction()" style='font-size:20px;'>&#127763;</span></h2>
 <table>
 	<tr>
         <td>Living:</td>
@@ -91,8 +91,10 @@ input:checked + .slider:before {
     </tr>
 </table>
 <br>
-<button onclick="myFunction()">Dark mode</button>
 
+<!--
+<button onclick="myFunction()">Dark mode</button>
+-->
 <script>
 function myFunction() {
    var element = document.body;
